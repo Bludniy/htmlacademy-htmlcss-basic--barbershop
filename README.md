@@ -1,1 +1,1 @@
-# htmlacademy-htmlcss-basic--barbershop
+# htmlacademy-htmlcss-basic
