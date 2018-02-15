@@ -29,23 +29,17 @@
     <!--Page main content------------------------------------------------------>
     <!------------------------------------------------------------------------->
     <main class="container">
-      <!--Здесь article избыточен, т.к. всё содержимое описывается элементом main-->
       <article class="catalog-item">
         <!--Current page title and navigation-breadcrumbs---------------------->
-        <!--TODO: узнать, можно ли заголовок и навигацию обозначить элементом
-            section-->
-        <h1 class="page-title">Набор для путешествий «BAXTER OF CALIFORNIA»</h1>
-        <!--TODO: убрать nav, присвоить класс элементу ul-->
-        <nav class="breadcrumbs">
-          <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Средства для ухода</a></li>
-            <!--TODO: узнать, является ли ссылкой указатель текущей страницы-->
-            <li><a class="current" href="#">Набор для путешествий «BAXTER OF
-                CALIFORNIA»</a></li>
-          </ul>
-        </nav>
+        <section class="page-title">
+          <h1>Набор для путешествий «Baxter of California»</h1>
+            <ul class="breadcrumbs">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Магазин</a></li>
+              <li><a href="#">Средства для ухода</a></li>
+              <li class="current-page">Набор для путешествий «Baxter of California»</li>
+            </ul>
+        </section>
         <!--Item's photogallery------------------------------------------------>
         <section class="item-images">
           <!--TODO: узнать, подходит ли элемент figure для фотографий товара-->
