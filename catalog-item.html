@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Набор для путешествий «BAXTER OF CALIFORNIA»</title>
+  </head>
+  <body>
+    <!------------------------------------------------------------------------->
+    <!--Page header------------------------------------------------------------>
+    <!------------------------------------------------------------------------->
+    <header class="main-header">
+      <div class="main-wrapper">
+        <nav class="main-navigation">
+          <a class="navigation-logo" href="#">
+            <!--TODO: узнать, можно ли заменить на текст вместо картинки-->
+            <img src="http://via.placeholder.com/111x24" width="111" height="24"
+                alt="Главная">
+          </a>
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li class="active"><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="login" href="#">Вход</a>
+        </div>
+      </div>
+    </header>
+    <!------------------------------------------------------------------------->
+    <!--Page main content------------------------------------------------------>
+    <!------------------------------------------------------------------------->
+    <main class="container">
+      <!--Здесь article избыточен, т.к. всё содержимое описывается элементом main-->
+      <article class="catalog-item">
+        <!--Current page title and navigation-breadcrumbs---------------------->
+        <!--TODO: узнать, можно ли заголовок и навигацию обозначить элементом
+            section-->
+        <h1 class="page-title">Набор для путешествий «BAXTER OF CALIFORNIA»</h1>
+        <!--TODO: убрать nav, присвоить класс элементу ul-->
+        <nav class="breadcrumbs">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Средства для ухода</a></li>
+            <!--TODO: узнать, является ли ссылкой указатель текущей страницы-->
+            <li><a class="current" href="#">Набор для путешествий «BAXTER OF
+                CALIFORNIA»</a></li>
+          </ul>
+        </nav>
+        <!--Item's photogallery------------------------------------------------>
+        <section class="item-images">
+          <!--TODO: узнать, подходит ли элемент figure для фотографий товара-->
+          <div class="item-image">
+            <img src="http://via.placeholder.com/460x500" width="460" height="500"
+                alt="«Набор для путешествий «BAXTER OF CALIFORNIA»">
+          </div>
+          <div class="item-previews">
+            <a href="#"><img src="http://via.placeholder.com/140x150" width="140"
+                height="150" alt="«BAXTER OF CALIFORNIA»"></a>
+            <a href="#"><img src="http://via.placeholder.com/140x150" width="140"
+                height="150" alt="«BAXTER OF CALIFORNIA»"></a>
+            <a href="#"><img src="http://via.placeholder.com/140x150" width="140"
+                height="150" alt="«BAXTER OF CALIFORNIA»"></a>
+          </div>
+        </section>
+        <!--Item's description------------------------------------------------->
+        <section class="item-description">
+          <div class="item-availability">
+            <span>Есть в наличии</span>
+            <span>Артикул: DEXTER-AE</span>
+          </div>
+          <!--TODO: обернуть в section/div, т.к. описание может состоять из
+              нескольких абзацев-->
+          <p>Travel Kit – необходимый аксессуар во время любого путешествия.
+            В аккуратной кожанной сумке находится все, что нужно для бритья и
+            ухода за кожей во время рабочей поездки или отдыха: средство для
+            умывания, увлажняющий крем, крем для бритья, крем после бритья,
+            шампунь. Набор также может стать отличным подарком.</p>
+          <div class="purchase">
+            <span>750 руб.</span>
+            <a class="btn" href="#">Купить</a>
+          </div>
+          <!--TODO: уточнить, заголовок ли это-->
+          <h2>В набор входят:</h2>
+          <ul class="item-content">
+            <li>Средство для умывания (50 мл)</li>
+            <li>Увлажняющий крем (50 мл)</li>
+            <li>Крем для бритья (50 мл)</li>
+            <li>Крем после бритья, шампунь (50 мл)</li>
+            <li>Удобная кожаная косметичка</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <!------------------------------------------------------------------------->
+    <!--Page footer------------------------------------------------------------>
+    <!------------------------------------------------------------------------->
+    <footer class="main-footer">
+      <div class="main-wrapper">
+        <section class="footer-contacts">
+          <p>
+            Барбершоп «Бородинский»<br>
+            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            <a href="#">Как нас найти?</a><br>
+            Телефон: +7 (812) 666-02-66
+          </p>
+        </section>
+        <section class="footer-social">
+          <p>Давайте дружить!</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-copyright">
+          <p>Разработано:
+            <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          </p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
