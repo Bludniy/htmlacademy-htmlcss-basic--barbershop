@@ -38,41 +38,39 @@
             <li>Средства для ухода</li>
           </ul>
       </section>
-        <!--Filters by brands and categories----------------------------------->
-        <aside class="filters">
-          <form action="#" method="post">
-            <div class="filters-brands">
-              <!--TODO: Элемент h2 заменить на fieldset и legend-->
-              <h2>Производители</h2>
-              <!--TODO: можно использовать элемент ul-->
-              <input id="checkbox1" type="checkbox" value="Baxter of California"
-                  checked>
-              <label for="checkbox1">Baxter of California</label>
-              <input id="checkbox2" type="checkbox" value="Mr Natty">
-              <label for="checkbox2">Mr Natty</label>
-              <input id="checkbox3" type="checkbox" value="Suavecito" checked>
-              <label for="checkbox3">Suavecito</label>
-              <input id="checkbox4" type="checkbox" value="Malin+Goetz">
-              <label for="checkbox4">Malin+Goetz</label>
-              <input id="checkbox5" type="checkbox" value="Murray's">
-              <label for="checkbox5">Murray's</label>
-              <input id="checkbox6" type="checkbox" value="American Crew" checked>
-              <label for="checkbox6">American Crew</label>
-            </div>
-            <div class="category">
-              <h2>Группы товаров</h2>
-              <input id="radio1" type="radio" name="item-category" value="Бритвенные
-                  принадлежности">
-              <label for="radio1">Бритвенные принадлежности</label>
-              <input id="radio2" type="radio" name="item-category" value="Средства
-                  для ухода">
-              <label for="radio2">Средства для ухода</label>
-              <input id="radio3" type="radio" name="item-category" value="Аксесcуары">
-              <label for="radio3">Аксесcуары</label>
-            </div>
-            <input class="btn" type="submit" name="show-results" value="Показать">
-          </form>
-        </aside>
+      <!--Filters by brands and categories----------------------------------->
+      <aside class="filters">
+        <form class="filters-form" action="#" method="post">
+          <fieldset class="filters-brands">
+            <legend class="filters-title">Производители</legend>
+            <input id="checkbox1" type="checkbox" value="Baxter of California"
+                checked>
+            <label for="checkbox1">Baxter of California</label>
+            <input id="checkbox2" type="checkbox" value="Mr Natty">
+            <label for="checkbox2">Mr Natty</label>
+            <input id="checkbox3" type="checkbox" value="Suavecito" checked>
+            <label for="checkbox3">Suavecito</label>
+            <input id="checkbox4" type="checkbox" value="Malin+Goetz">
+            <label for="checkbox4">Malin+Goetz</label>
+            <input id="checkbox5" type="checkbox" value="Murray's">
+            <label for="checkbox5">Murray's</label>
+            <input id="checkbox6" type="checkbox" value="American Crew" checked>
+            <label for="checkbox6">American Crew</label>
+          </fieldset>
+          <fieldset class="filters-category">
+            <legend class="filters-title">Группы товаров</legend>
+            <input id="radio1" type="radio" name="item-category" value="Бритвенные
+                принадлежности">
+            <label for="radio1">Бритвенные принадлежности</label>
+            <input id="radio2" type="radio" name="item-category" value="Средства
+                для ухода">
+            <label for="radio2">Средства для ухода</label>
+            <input id="radio3" type="radio" name="item-category" value="Аксесcуары">
+            <label for="radio3">Аксесcуары</label>
+          </fieldset>
+          <input class="btn" type="submit" name="show-results" value="Показать">
+        </form>
+      </aside>
         <!--Catalog items------------------------------------------------------>
         <section class="catalog-items">
           <article class="catalog-item">
