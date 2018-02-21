@@ -1,0 +1,124 @@
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000000 url("http://via.placeholder.com/1122x1750") no-repeat 50% 3px;
+  background-size: 1122px auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  margin-bottom: 60px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation {
+  float: left;
+  width: 780px;
+  /* Только для оформления сетки */
+  min-height: 70px;
+  background-color: red;
+}
+
+.user-block {
+  float: right;
+  width: 140px;
+  /* Только для оформления сетки */
+  min-height: 70px;
+  background-color: green;
+}
+
+.index-logo {
+  width: 368px;
+  height: 204px;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+  /* Только для оформления сетки */
+  min-height: 175px;
+
+  margin-right: 20px;
+  background-color: blue;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+  background-color: orange;
+}
+
+.index-content-left {
+  float: left;
+  width: 380px;
+  /* Только для оформления сетки */
+  min-height: 330px;
+  background-color: violet;
+}
+
+.index-content-right {
+  float: right;
+  width: 300px;
+  /* Только для оформления сетки */
+  min-height: 330px;
+  background-color: violet;
+}
+
+.main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: red;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  /* Только для оформления сетки */
+  min-height: 90px;
+  background-color: green;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+  /* Только для оформления сетки */
+  min-height: 90px;
+  background-color: green;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+  /* Только для оформления сетки */
+  min-height: 90px;
+  background-color: green;
+}
