@@ -1,6 +1,6 @@
 html,
 body {
-  min-width: 1122px;
+  min-width: 960px;
   margin: 0;
   padding: 0;
 }
@@ -10,10 +10,15 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #ffffff;
   text-transform: uppercase;
-  color: #000000;
-  background: #000000 url("http://via.placeholder.com/1122x1750") no-repeat 50% 3px;
-  background-size: 1122px auto;
+  background: #000000 url("../img/index-bg.jpg") no-repeat center top;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .clearfix::after {
@@ -29,30 +34,77 @@ body {
 /* Page header */
 .main-header {
   margin-bottom: 60px;
-}
-
-.container {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .main-navigation {
   float: left;
   width: 780px;
-  /* Только для оформления сетки */
-  min-height: 70px;
-  background-color: red;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 25px 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-navigation a:hover {
+  background-color: #242424;
 }
 
 .user-block {
   float: right;
-  width: 140px;
-  /* Только для оформления сетки */
-  min-height: 70px;
-  background-color: green;
+  max-width: 140px;
 }
 
+.login {
+  position: relative;
+  display: inline-block;
+  padding: 25px 20px;
+  padding-left: 50px;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.login:hover {
+  background-color: #242424;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  width: 18px;
+  height: 18px;
+  background: transparent url("http://via.placeholder.com/18x18") no-repeat;
+  /* For sprite use */
+  /*background-position: -1px -15px;*/
+  opacity: 0.3;
+}
+
+.login:hover::before {
+  opacity: 1;
+}
 
 
 
