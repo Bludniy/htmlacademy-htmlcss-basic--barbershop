@@ -7,8 +7,32 @@ body {
 }
 
 body {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
   background: #000000 url("http://via.placeholder.com/1122x1750") no-repeat 50% 3px;
   background-size: 1122px auto;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .clearfix::after {
