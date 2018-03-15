@@ -1,7 +1,6 @@
 html,
 body {
   min-width: 1122px;
-  min-height: 1750px;
   margin: 0;
   padding: 0;
 }
@@ -17,30 +16,17 @@ body {
   background-size: 1122px auto;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 42px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  text-transform: uppercase;
-  color: #000000;
-}
-
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
 
+
+
+
+
+/* Page header */
 .main-header {
   margin-bottom: 60px;
 }
@@ -67,6 +53,30 @@ h2 {
   background-color: green;
 }
 
+
+
+
+
+
+/* Page main content */
+h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 .index-logo {
   width: 368px;
   height: 204px;
@@ -75,6 +85,9 @@ h2 {
   margin-left: auto;
 }
 
+
+
+/* Features */
 .features {
   margin-bottom: 80px;
 }
@@ -93,6 +106,9 @@ h2 {
   margin-right: 0;
 }
 
+
+
+/* Index page content */
 .index-content {
   margin-bottom: 35px;
   padding: 50px 80px;
@@ -115,6 +131,59 @@ h2 {
   background-color: violet;
 }
 
+
+
+/* Filters */
+.filters {
+  float: left;
+  width: 168px;
+  margin-right: 72px;
+  /* Только для оформления сетки */
+  min-height: 569px;
+  background-color: violet;
+}
+
+/* Catalog items */
+.catalog-items {
+  float: left;
+  width: 700px;
+  /* Только для оформления сетки */
+  min-height: 592px;
+  font-size: 0;
+  background-color: orange;
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  vertical-align: top;
+  /* Только для оформления сетки */
+  min-height: 286px;
+  background-color: blue;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.paginator {
+  width: 193px;
+  /* Только для оформления сетки */
+  min-height: 43px;
+  background-color: cyan;
+}
+
+.item-images {
+  float: left;
+}
+
+
+
+
+
+/* Page footer */
 .main-footer {
   margin-top: 65px;
   padding-top: 60px;
