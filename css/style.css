@@ -15,6 +15,11 @@ body {
   background: #000000 url("../img/index-bg.jpg") no-repeat center top;
 }
 
+.inner-page {
+  color: #000000;
+  background: #f8f3f0 url("../img/pattern-white.png") repeat;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -36,6 +41,10 @@ body {
   margin-bottom: 60px;
   color: #ffffff;
   background-color: #000000;
+}
+
+.inner-page .main-header {
+  margin-bottom: 55px;
 }
 
 .main-navigation {
@@ -66,6 +75,41 @@ body {
 
 .main-navigation a:hover {
   background-color: #242424;
+}
+
+.main-navigation .active {
+  position: relative;
+  background-color: none;
+}
+
+.main-navigation .active a:hover {
+  background: none;
+}
+
+.main-navigation .active::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 5px;
+  background-color: #ffffff;
+}
+
+.main-navigation .logo-inner {
+  float: left;
+  width: 111px;
+  height: 20px;
+  padding-top: 22px;
+}
+
+.main-navigation .logo-inner img {
+  width: 111px;
+  height: 24px;
+}
+
+.main-navigation .logo-inner:hover {
+  background: none;
 }
 
 .user-block {
@@ -111,30 +155,17 @@ body {
 
 
 /* Page main content */
-h1 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 42px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  text-transform: uppercase;
-  color: #000000;
-}
-
 .index-logo {
   width: 368px;
   height: 204px;
-  margin-right: auto;
+  margin: 0 auto;
   margin-bottom: 25px;
-  margin-left: auto;
+}
+
+/* Fool-proof rule */
+.index-logo img {
+  width: 368px;
+  height: 204px;
 }
 
 
@@ -147,15 +178,39 @@ h2 {
 .features-item {
   float: left;
   width: 300px;
-  /* Только для оформления сетки */
-  min-height: 175px;
-
   margin-right: 20px;
-  background-color: blue;
+  text-align: center;
 }
 
 .features-item:last-child {
   margin-right: 0;
+}
+
+.features-name {
+  position: relative;
+  display: block;
+  margin-bottom: 35px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.features-name::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+
+.features-item p {
+  margin: 10px;
+  margin-bottom: 0;
 }
 
 
@@ -164,23 +219,360 @@ h2 {
 .index-content {
   margin-bottom: 35px;
   padding: 50px 80px;
-  background-color: orange;
+  color: #000000;
+  background:
+    url("../img/index-content-shadow.png") no-repeat center,
+    #f8f5f2 url("../img/pattern-white.png");
 }
 
 .index-content-left {
   float: left;
   width: 380px;
-  /* Только для оформления сетки */
-  min-height: 330px;
-  background-color: violet;
 }
 
 .index-content-right {
   float: right;
   width: 300px;
-  /* Только для оформления сетки */
-  min-height: 330px;
-  background-color: violet;
+}
+
+.index-content-title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.index-content p {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.news-preview {
+  margin: 0;
+  padding: 0;
+  padding-right: 25px;
+  list-style: none;
+}
+
+.news-preview li {
+  margin-bottom: 25px;
+}
+
+.news-preview p {
+  margin-bottom: 0;
+}
+
+.news-preview time {
+  text-transform: none;
+}
+
+.btn {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 10px 33px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  vertical-align: top;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+  background-color: #000000;
+}
+
+.gallery {
+  position: relative;
+  height: 260px;
+}
+
+.gallery-content {
+  height: 164px;
+  margin: 0;
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+
+.gallery .btn {
+  position: absolute;
+  bottom: 0;
+  width: 140px;
+  margin: 0;
+}
+
+.gallery-prev {
+  left: 0;
+}
+
+.gallery-next {
+  right: 0;
+}
+
+.appointment-form input {
+  float: left;
+  width: 106px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 7px 15px;
+  font: inherit;
+  color: inherit;
+  text-transform: inherit;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.appointment-form input:focus {
+  border: 2px solid #663d15;
+}
+
+.appointment-form input:nth-child(2n) {
+  margin-right: 0;
+}
+
+.appointment-form .btn {
+  clear: both;
+  width: 100%;
+}
+
+
+
+
+
+/* Inner pages styles */
+.inner-page-title {
+  margin-bottom: 55px;
+}
+
+.inner-page-title h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+  display: inline;
+  padding-right: 40px;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 14px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs .current {
+  color: #aba9a7;
+}
+
+.breadcrumbs .current::after {
+  display: none;
+}
+
+.inner-content {
+  margin-bottom: 75px;
+}
+
+.inner-content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.inner-content h3 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.inner-content h2 + h3 {
+  margin-top: 30px;
+}
+
+.inner-content p {
+  margin: 14px 0;
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.inner-content td {
+  padding: 10px 15px;
+  border: 2px solid #000000;
+}
+
+/* Special styles for content elements */
+.big-heading {
+  margin-top: 55px;
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+.big-heading h2 {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin: 0;
+  padding: 0 25px;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  background: #f8f3f0 url("../img/pattern-white.png") repeat;
+}
+
+.big-heading::after {
+  content: "";
+  position: relative;
+  top: -25px;
+  z-index: 1;
+  display: block;
+  border-bottom: 2px solid #000000;
+}
+
+/* Advanced big heading styling */
+/* .inner-content .big-heading-flex {
+  display: flex;
+  align-items: center;
+  margin-top: 55px;
+  margin-bottom: 65px;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.inner-content .big-heading-flex::before,
+.inner-content .big-heading-flex::after {
+  content: "";
+  flex-grow: 1;
+  width: 50px;
+  height: 2px;
+  background: black;
+}
+
+.inner-content .big-heading-flex::before {
+  margin-right: 25px;
+}
+
+.inner-content .big-heading-flex::after {
+  margin-left: 25px;
+} */
+
+.custom-list-1 {
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.custom-list-1 li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.prices-table {
+  width: 100%;
+}
+
+.prices-table td {
+  width: 50%;
+}
+
+.prices-table td:last-child {
+  text-align: center;
+}
+
+.short-text {
+  padding-right: 70px;
+}
+
+.inner-columns {
+  margin: 60px 0;
+}
+
+.inner-column-left,
+.inner-column-right {
+  width: 460px;
+}
+
+.inner-column-left {
+  float: left;
+}
+
+.inner-column-right {
+  float: right;
+}
+
+/* Because vertical margins don't collapse with float-elements */
+.inner-column-left *:first-child,
+.inner-column-right *:first-child {
+  margin-top: 0;
+}
+
+.inner-column-left *:last-child,
+.inner-column-right *:last-child {
+  margin-bottom: 0;
 }
 
 
@@ -194,6 +586,8 @@ h2 {
   min-height: 569px;
   background-color: violet;
 }
+
+
 
 /* Catalog items */
 .catalog-items {
@@ -240,30 +634,95 @@ h2 {
   margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
-  background-color: red;
+  color: #ffffff;
+  background: #252525 url("../img/pattern-black.png");
 }
 
 .footer-contacts {
   float: left;
   width: 320px;
   margin-right: 60px;
-  /* Только для оформления сетки */
-  min-height: 90px;
-  background-color: green;
+}
+
+.footer-contacts a {
+  color: #ffffff;
+}
+
+.footer-contacts a:hover {
+  text-decoration: none;
 }
 
 .footer-social {
   float: left;
   width: 180px;
-  /* Только для оформления сетки */
-  min-height: 90px;
-  background-color: green;
+  text-align: center;
 }
 
 .footer-copyright {
   float: right;
-  width: 180px;
-  /* Только для оформления сетки */
-  min-height: 90px;
-  background-color: green;
+  max-width: 180px;
+}
+
+.footer-social p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  background: #000000 /*url("../img/sprite.png")*/ no-repeat center;
+  transition:
+    background-position 0.5s,
+    background-color 0.5s;
+}
+
+.social-btn:hover {
+  background-color: #ffffff;
+}
+
+/*
+.social-btn-vk {
+  background-position: 9px -447px;
+}
+
+.social-btn-fb {
+  background-position: 15px -171px;
+}
+
+.social-btn-inst {
+  background-position: 12px -313px;
+}
+
+.social-btn-vk:hover {
+  background-position: 9px -381px;
+}
+
+.social-btn-fb:hover {
+  background-position: 15px -100px;
+}
+
+.social-btn-inst:hover {
+  background-position: 12px -242px;
+}
+*/
+
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer-copyright .btn {
+  margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+  color: #000000;
+  background-color: #ffffff;
 }
