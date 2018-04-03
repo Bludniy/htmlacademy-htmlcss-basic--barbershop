@@ -6,19 +6,20 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <!--=====================================================================-->
     <!--Page header==========================================================-->
     <!--=====================================================================-->
     <header class="main-header">
       <div class="container clearfix">
         <nav class="main-navigation">
+          <a class="logo-inner" href="index.html"><img src="img/inner-logo.png"
+            width="111" height="24" alt="Барбершоп «Бородинский»"></a>
           <ul>
-            <li><a href="#">Главная</a></li>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Новости</a></li>
-            <li><a href="#">Прайс-лист</a></li>
-            <li class="active"><a href="#">Магазин</a></li>
+            <li><a href="price.html">Прайс-лист</a></li>
+            <li class="active"><a href="catalog.html">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
@@ -32,17 +33,19 @@
     <!--=====================================================================-->
     <main class="container clearfix">
       <!--Current page title and navigation-breadcrumbs======================-->
-      <h1 class="page-title">Средства для ухода</h1>
-      <ul class="breadcrumbs">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li>Средства для ухода</li>
-      </ul>
+      <div class="inner-page-title">
+        <h1>Средства для ухода</h1>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li class="current">Средства для ухода</li>
+        </ul>
+      </div>
       <!--Filters by brands and categories===================================-->
       <aside class="filters">
         <form class="filters-form" action="#" method="post">
           <fieldset class="filters-brands">
-            <legend class="filters-title">Производители</legend>
+            <legend class="filters-title">Производители:</legend>
             <input id="checkbox1" type="checkbox" value="Baxter of California"
                 checked>
             <label for="checkbox1">Baxter of California</label>
@@ -58,12 +61,12 @@
             <label for="checkbox6">American Crew</label>
           </fieldset>
           <fieldset class="filters-category">
-            <legend class="filters-title">Группы товаров</legend>
+            <legend class="filters-title">Группы товаров:</legend>
             <input id="radio1" type="radio" name="item-category" value="Бритвенные
                 принадлежности">
             <label for="radio1">Бритвенные принадлежности</label>
             <input id="radio2" type="radio" name="item-category" value="Средства
-                для ухода">
+                для ухода" checked>
             <label for="radio2">Средства для ухода</label>
             <input id="radio3" type="radio" name="item-category" value="Аксесcуары">
             <label for="radio3">Аксесcуары</label>
@@ -74,7 +77,7 @@
       <!--Catalog items======================================================-->
       <div class="catalog-items">
         <article class="catalog-item">
-          <a href="#"><img src="http://via.placeholder.com/220x165" width="220"
+          <a href="#"><img src="img/catalog-item1.jpg" width="220"
               height="165" alt="Набор для путешествий"></a>
           <h2><a href="#"><span class="category">Набор для путешествий</span>
               <span class="brand">«BAXTER OF CALIFORNIA»</span></a></h2>
@@ -84,7 +87,7 @@
           </div>
         </article>
         <article class="catalog-item">
-          <a href="#"><img src="http://via.placeholder.com/220x165" width="220"
+          <a href="#"><img src="img/catalog-item2.jpg" width="220"
               height="165" alt="Увлажняющий кондиционер"></a>
           <h2><a href="#"><span class="category">Увлажняющий кондиционер</span>
               <span class="brand">«BAXTER OF CALIFORNIA»</span></a></h2>
@@ -94,7 +97,7 @@
           </div>
         </article>
         <article class="catalog-item">
-          <a href="#"><img src="http://via.placeholder.com/220x165" width="220"
+          <a href="#"><img src="img/catalog-item3.jpg" width="220"
               height="165" alt="Гель для волос"></a>
           <h2><a href="#"><span class="category">Гель для волос</span>
               <span class="brand">«SUAVECITO»</span></a></h2>
@@ -104,7 +107,7 @@
           </div>
         </article>
         <article class="catalog-item">
-          <a href="#"><img src="http://via.placeholder.com/220x165" width="220"
+          <a href="#"><img src="img/catalog-item4.jpg" width="220"
               height="165" alt="Глина для укладки волос"></a>
           <h2><a href="#"><span class="category">Глина для укладки волос</span>
               <span class="brand">«AMERICAN CREW»</span></a></h2>
@@ -114,7 +117,7 @@
           </div>
         </article>
         <article class="catalog-item">
-          <a href="#"><img src="http://via.placeholder.com/220x165" width="220"
+          <a href="#"><img src="img/catalog-item5.jpg" width="220"
               height="165" alt="Гель для волос"></a>
           <h2><a href="#"><span class="category">Гель для волос</span>
               <span class="brand">«AMERICAN CREW»</span></a></h2>
@@ -124,7 +127,7 @@
           </div>
         </article>
         <article class="catalog-item">
-          <a href="#"><img src="http://via.placeholder.com/220x165" width="220"
+          <a href="#"><img src="img/catalog-item6.jpg" width="220"
               height="165" alt="Набор для бритья"></a>
           <h2><a href="#"><span class="category">Набор для бритья</span>
               <span class="brand">«BAXTER OF CALIFORNIA»</span></a></h2>
@@ -136,7 +139,7 @@
         <div class="paginator">
           <ul>
             <li><a class="btn" href="#">1</a></li>
-            <li>2</li>
+            <li class="btn current-page">2</li>
             <li><a class="btn" href="#">3</a></li>
             <li><a class="btn" href="#">4</a></li>
           </ul>
@@ -163,9 +166,8 @@
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </div>
         <div class="footer-copyright">
-          <p>Разработано:
-            <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-          </p>
+          <p>Разработано:</p>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </div>
       </div>
     </footer>
